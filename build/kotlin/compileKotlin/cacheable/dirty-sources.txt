@@ -1,0 +1,4 @@
+C:\Users\msi\OneDrive\문서\GitHub\Mobile_Test\src\main\kotlin\com\daelim\springtest\main\resolver\TestResolve.kt
+C:\Users\msi\OneDrive\문서\GitHub\Mobile_Test\src\main\kotlin\com\daelim\springtest\main\api\model\dto\TestDto.kt
+C:\Users\msi\OneDrive\문서\GitHub\Mobile_Test\src\main\kotlin\com\daelim\springtest\main\controller\Controller.kt
+C:\Users\msi\OneDrive\문서\GitHub\Mobile_Test\src\main\kotlin\com\daelim\springtest\SpringTestApplication.kt
