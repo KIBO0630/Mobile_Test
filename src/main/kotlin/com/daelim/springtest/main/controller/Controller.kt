@@ -1,4 +1,14 @@
+package com.daelim.springtest.main.controller
+
+import com.daelim.springtest.main.api.model.dto.TestDto
+import com.daelim.springtest.main.api.model.dto.TestDtoRequest
+import io.swagger.v3.oas.annotations.Parameter
+import jakarta.validation.Valid
+import net.datafaker.Faker
+import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.*
 import kotlin.random.Random
+
 class Controller {
     private val tests = mutableListOf<TestDto>()
 
