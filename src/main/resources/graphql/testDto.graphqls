@@ -1,4 +1,5 @@
 type Test {
+    name : String!
     email: String!
     password: String!
 }
