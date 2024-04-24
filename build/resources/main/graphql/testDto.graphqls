@@ -1,6 +1,8 @@
 type Test {
+    name : String!
     email: String!
     password: String!
+}
 
 type Query {
     findAllTests: [Test],
@@ -9,5 +11,5 @@ type Query {
 }
 
 type Mutation {
-    createTest(ChaEmail: String, ChaPassword: String): Test
+    createTest(email: String!, password: String!): Test
 }
