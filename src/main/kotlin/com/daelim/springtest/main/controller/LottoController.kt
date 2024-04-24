@@ -53,9 +53,14 @@ class LottoController {
 
     @GetMapping("/lotto/check")
     fun checkLottoResults(): ResponseEntity<List<LottoResult>> {
+        val lastGeneratedNumbers = generatedNumbers.lastOrNull()
+        if (lastGeneratedNumbers.isNullOrEmpty()) {
+            return ResponseEntity.ok().body(emptyList())
+        }
+
         val winningNumbers = WinningNumbers(
-            numbers = listOf(15, 16, 17, 25, 30, 31),
-            bonusNumber = 32
+            numbers = lastGeneratedNumbers,
+            bonusNumber = lastGeneratedNumbers[6]
         )
 
         val results = mutableListOf<LottoResult>()
